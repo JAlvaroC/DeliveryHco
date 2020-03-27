@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!--c -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Delivery : "CHESCO FRANCHESCO"</title>  
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+    <form action="" class="form">
+       <h1 class="form_title">DELIVERY "CHESCO-FRANCHESCO"</h1>
+       <h3 class="form_subtitle">Reservas y pedidos</h3>
+       <p class="form_paragraph"|>Llene estos datos para agendar la entrega de tu pedido.</p>
+      
+       <label for="name" class="form_label">¿Cuál es tu nombre?</label>
+         <input id="client" type="text" class="form_input" required>
+       
+         <label for="date" class="form_label">Indica la fecha de tu reserva</label>
+         <input id="date" type="date" class="form_input" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+       
+         <label for="hour" class="form_label">Indica la hora de tu reserva</label>
+         <input id="hour" type="time" class="form_input" min="07:00" max="21:00" step="3600" required >
+      
+         <label for="dealer" class="form_label">Repartidor de preferencia</label>
+         <select id="dealer" name="listdealer " class="form_input">
+            <option value="Dealer Alvaro">Repartidor Alvaro</option>
+            <option value="Dealer Paolo">Repartidor Paolo</option>
+            <option value="Dealer Brayan">Repartidos Brayan</option>
+            <option value="Dealer Julio">Repartidor Julio</option>
+            <option value="Dealer Enrique">Repartidor Enrique</option>
+            <option value="Dealer Alex">Reparitdor Alex</option>
+         </select>
+        <label for="services" class="form_label">¿Cual es el servicio que quiere realizar</label>
+         <select name="listservices" id="services" class="form_input">
+            <option>Centro Huánuco--$3.00</option>
+            <option>Puelles --$4.00</option>
+            <option>Laguna--$4.00</option>
+            <option>Ovalo--$5.00</option>
+            <option>Paucarbamba--$6.00</option>
+            <option>San pedro--$2.50</option>
+            <option>Carrizales--$3.50</option>
+            <option>San sebastian--$1.50</option>
+            <option >lawtenis--$4.50</option>
+         </select>   
+         <button id="submit" class="form_submit">Enviar a whatsApp</button>
+    </form>
+    <Script src="js/form.js"></Script>
+    
+</body>
+</html>
